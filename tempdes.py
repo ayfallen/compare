@@ -24,6 +24,7 @@ plain_text = ""
 with open(inputfile) as f:
     for line in f:
         plain_text += line
+plain_text += "\x00" * (8 - len(plain_text) % 8)
 print '=' * 100
 print "Plaintext is: ", plain_text
 
