@@ -2,6 +2,7 @@ from Crypto.Cipher import DES
 from Crypto import Random
 import sys
 import binascii
+import time
 
 # cbc_key = "\x40\xfe\xdf\x38\x6d\xa1\x3d\x57"
 # iv = Random.get_random_bytes(8)
